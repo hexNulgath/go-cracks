@@ -28,11 +28,17 @@ const useForm = (callback, validate) => {
     });
   };
 
+  function saveForm(form) {
+    let f = JSON.stringify(form);
+    window.localStorage.removeItem('form');
+    window.localStorage.setItem('form', f);
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setErrors(validate(values));
-    XMLHttpRequest.open('POST', '../server/user_data');
     setIsSubmitting(true);
+    saveForm(values);
   };
 
   useEffect(() => {

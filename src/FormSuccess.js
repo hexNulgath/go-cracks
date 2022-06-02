@@ -1,16 +1,34 @@
 import React from 'react';
+import axios from 'axios';
 
 const FormSuccess = () => {
-  var price = sessionStorage.getItem([0]);
+  const cached = getForm();
 
+  function getForm() {
+    let f = window.localStorage.getItem('form');
+    if (f) return JSON.parse(f);
+  }
+  const total = cached.wages * cached.employees * 2000;
+  function sendUserData() {
+    const options = {
+      method: 'GET',
+      url: 'http://localhost:8000/data',
+      params: { total: total, body: cached },
+    };
+
+    axios
+      .request(options)
+      .then((response) => {
+        sendUserData(response.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }
+  sendUserData();
   return (
-    <div className="form-content-right">
-      <p>'hola' {price}</p>
-      <h1>proceder</h1>
-      <form action=" http://localhost:3001/checkout">
-        <input type="hidden" />
-        <input type="submit" value="comprar ahora" />
-      </form>
+    <div className="checkout-btn">
+      <p>'el coste total es {total}'</p>
     </div>
   );
 };
