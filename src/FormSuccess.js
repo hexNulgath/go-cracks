@@ -8,7 +8,7 @@ const FormSuccess = () => {
     let f = window.localStorage.getItem('form');
     if (f) return JSON.parse(f);
   }
-  const total = cached.wages * cached.employees * 2000;
+  const total = cached.wages * cached.employees * 300 * parseInt(cached.horas);
   function sendUserData() {
     const options = {
       method: 'GET',
@@ -25,6 +25,7 @@ const FormSuccess = () => {
         console.error(error);
       });
   }
+
   sendUserData();
   return (
     <div className="checkout-btn">

@@ -7,7 +7,7 @@ const useForm = (callback, validate) => {
     email: '',
     serviceDate: '',
     startTime: '',
-    endTime: '',
+    horas: '',
     wages: '',
     employees: '',
     rut: '',

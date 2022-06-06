@@ -36,8 +36,8 @@ export default function validateInfo(values) {
     errors.startTime = 'La hora de ingreso no puede ser en menos de 6 horas';
   }
 
-  if (!values.endTime) {
-    errors.endTime = 'Porfavor ingrese la hora de salida';
+  if (!values.horas) {
+    errors.horas = 'Porfavor ingrese la cantidad de horas deseada';
   }
 
   if (!values.wages) {

@@ -103,22 +103,31 @@ const Form = ({ submitForm }) => {
           />
           {errors.startTime && <p>{errors.startTime}</p>}
         </div>
-
         <div className="form-inputs">
-          <label htmlFor="endTime" className="form-label">
-            Hora del fin del servicio*
-          </label>
-          <br />
+          Cantidad de horas* <br />
           <input
-            id="endTime"
-            type="time"
-            name="endTime"
+            id="ochoHoras"
+            type="radio"
+            name="horas"
             className="form-input"
-            placeholder="Hora del fin del servicio"
-            value={values.endTime}
+            value="8"
             onChange={handleChange}
           />
-          {errors.endTime && <p>{errors.endTime}</p>}
+          <label htmlFor="ochoHoras" className="form-label">
+            8h
+          </label>
+          <input
+            id="seisHoras"
+            type="radio"
+            name="horas"
+            className="form-input"
+            value="6"
+            onChange={handleChange}
+          />
+          <label htmlFor="seisHoras" className="form-label">
+            6h
+          </label>
+          {errors.horas && <p>{errors.horas}</p>}
         </div>
 
         <div className="form-inputs">
