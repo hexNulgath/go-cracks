@@ -51,3 +51,4 @@ const useForm = (callback, validate) => {
 };
 
 export default useForm;
+exports.values = useState;

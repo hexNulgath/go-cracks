@@ -1,13 +1,9 @@
 import axios from 'axios';
+import values from './useForm';
 
 const FormSuccess = () => {
-  function getForm() {
-    let f = window.localStorage.getItem('form');
-    if (f) return JSON.parse(f);
-  }
-  const cached = getForm();
-  const total = cached.wages * cached.employees * 300 * parseInt(cached.horas);
-
+  const total = values.wages * values.employees * 300 * parseInt(values.horas);
+  console.log(values);
   function sendUserData() {
     const options = {
       method: 'get',
@@ -19,7 +15,7 @@ const FormSuccess = () => {
         'Access-Control-Allow-Headers': 'Origin, Content-Type, X-Auth-Token',
         'Access-Control-Allow-Credentials': 'true',
       },
-      params: { total: total, body: cached },
+      params: { total: total, body: values },
     };
     axios
       .request(options)
