@@ -1,1 +1,1 @@
-cd go-cracks && yarn start
+react: cd go-cracks && yarn start
