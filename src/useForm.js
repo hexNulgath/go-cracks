@@ -30,8 +30,7 @@ const useForm = (callback, validate) => {
 
   function saveForm(form) {
     let f = JSON.stringify(form);
-    window.localStorage.removeItem('form');
-    window.localStorage.setItem('form', f);
+    global.value = f;
   }
 
   const handleSubmit = (e) => {
@@ -51,4 +50,3 @@ const useForm = (callback, validate) => {
 };
 
 export default useForm;
-exports.values = useState;

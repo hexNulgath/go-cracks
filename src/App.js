@@ -9,11 +9,11 @@ function App() {
   function submitForm() {
     setIsSubmitted(true);
   }
+
   return (
     <div className="App">
       {!isSubmitted ? <Form submitForm={submitForm} /> : <FormSuccess />}
     </div>
   );
 }
-
 export default App;

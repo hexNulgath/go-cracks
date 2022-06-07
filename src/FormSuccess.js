@@ -1,9 +1,10 @@
 import axios from 'axios';
-import values from './useForm';
 
 const FormSuccess = () => {
+  const values = JSON.parse(global.value);
   const total = values.wages * values.employees * 300 * parseInt(values.horas);
-  console.log(values);
+  console.log(values.wages);
+  console.log(total);
   function sendUserData() {
     const options = {
       method: 'get',
