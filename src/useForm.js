@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { data, setData } from './App.js';
 
 const useForm = (callback, validate) => {
   const [values, setValues] = useState({
@@ -30,7 +31,7 @@ const useForm = (callback, validate) => {
 
   function saveForm(form) {
     let f = JSON.stringify(form);
-    global.value = f;
+    setData(f);
   }
 
   const handleSubmit = (e) => {

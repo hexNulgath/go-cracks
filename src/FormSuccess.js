@@ -1,9 +1,11 @@
 import axios from 'axios';
+import { data } from './App.js';
 
 const FormSuccess = () => {
-  const values = JSON.parse(global.value);
+  const values = JSON.parse(data);
   const total = values.wages * values.employees * 300 * parseInt(values.horas);
-  console.log(values.wages);
+  console.log(data);
+  console.log(values);
   console.log(total);
   function sendUserData() {
     const options = {

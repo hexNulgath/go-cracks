@@ -8,7 +8,6 @@ const Form = ({ submitForm }) => {
     submitForm,
     validate
   );
-
   return (
     <div className="form-content-right">
       <h1>Solo un paso más...</h1>
