@@ -1,1 +1,1 @@
-web: node src/index.js
+cd go-cracks && yarn start
