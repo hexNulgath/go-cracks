@@ -10,7 +10,7 @@ const FormSuccess = () => {
   function sendUserData() {
     const options = {
       method: 'get',
-      url: 'https://go-cracks.herokuapp.com/data',
+      url: 'http://localhost:8000/data',
       headers: {
         'content-type': 'application/x-www-form-urlencoded',
         'Access-Control-Allow-Origin': '*',
