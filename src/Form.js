@@ -2,7 +2,6 @@ import React from 'react';
 import useForm from './useForm';
 import validate from './validateInfo';
 import './Form.css';
-import { Row } from 'react-bootstrap';
 
 const Form = ({ submitForm }) => {
   const { handleChange, values, handleSubmit, errors } = useForm(
