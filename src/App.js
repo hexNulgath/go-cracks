@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
-import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import Form from './Form';
 import FormSuccess from './FormSuccess';
+var bootstrap = require('react-bootstrap');
+
 var data;
 function setData(value) {
   data = value;
@@ -17,31 +18,35 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar>
-        <Container>
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
-              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
+      <bootstrap.Navbar>
+        <bootstrap.Container>
+          <bootstrap.Navbar.Brand href="#home">
+            React-Bootstrap
+          </bootstrap.Navbar.Brand>
+          <bootstrap.Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <bootstrap.Navbar.Collapse id="basic-navbar-nav">
+            <bootstrap.Nav className="me-auto">
+              <bootstrap.Nav.Link href="#home">Home</bootstrap.Nav.Link>
+              <bootstrap.Nav.Link href="#link">Link</bootstrap.Nav.Link>
+              <bootstrap.NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                <bootstrap.NavDropdown.Item href="#action/3.1">
+                  Action
+                </bootstrap.NavDropdown.Item>
+                <bootstrap.NavDropdown.Item href="#action/3.2">
                   Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                </bootstrap.NavDropdown.Item>
+                <bootstrap.NavDropdown.Item href="#action/3.3">
                   Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
+                </bootstrap.NavDropdown.Item>
+                <bootstrap.NavDropdown.Divider />
+                <bootstrap.NavDropdown.Item href="#action/3.4">
                   Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+                </bootstrap.NavDropdown.Item>
+              </bootstrap.NavDropdown>
+            </bootstrap.Nav>
+          </bootstrap.Navbar.Collapse>
+        </bootstrap.Container>
+      </bootstrap.Navbar>
       {!isSubmitted ? <Form submitForm={submitForm} /> : <FormSuccess />}
     </div>
   );
