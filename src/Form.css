@@ -2,3 +2,25 @@
   color: red;
   font-size: 12px;
 }
+
+h2 {
+  font-family: 'Lora', serif;
+  font-size: 58px;
+  font-weight: 500;
+  color: #1e1e1e;
+  line-height: 68px;
+}
+h2 span {
+  font-family: 'Covered By Your Grace', cursive;
+}
+p {
+  font-family: 'Lora', serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #1e1e1e;
+}
+
+#Form {
+  margin-top: 70px;
+  margin-left: 100px;
+}

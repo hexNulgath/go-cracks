@@ -1,7 +1,58 @@
-.App {
-  text-align: center;
+#logoNavbar {
+  height: 45px;
+  width: auto;
+}
+#navbar {
+  background-color: #f4f3f2;
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  font-size: 17px;
 }
 
+#footer {
+  background-color: #f4f3f2;
+  font-size: 16px;
+  height: 168px;
+  width: 100;
+  padding: 0;
+}
+#footer a {
+  font-family: 'Lora', serif;
+  text-decoration: none;
+}
+a {
+  color: #929291;
+  line-height: 32px;
+}
+#footer p {
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+p {
+  color: #929291;
+}
+a:hover {
+  color: #bbd866;
+}
+#footerActive {
+  color: #8ca24d;
+}
+.nav-link {
+  color: #1e1e1e;
+}
+#copyright {
+  color: #929291;
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.nav-link:hover {
+  color: #bbd866;
+}
+#active {
+  color: #bbd866;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
