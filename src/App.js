@@ -16,7 +16,7 @@ function App() {
   }
 
   return (
-    <div className="container">
+    <div className="container" id="bodyForm">
       <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="https://www.gocracks.uy/">

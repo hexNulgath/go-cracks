@@ -22,5 +22,39 @@ p {
 
 #Form {
   margin-top: 70px;
-  margin-left: 100px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+label {
+  font-family: 'Lora', serif;
+  font-size: 22px;
+  font-weight: 00;
+  color: #1e1e1e;
+  margin-top: 14px;
+  margin-bottom: 0px;
+}
+
+#ocho {
+  margin-right: 30px;
+  margin-left: 5px;
+}
+
+#seis {
+  margin-left: 5px;
+}
+
+input {
+  margin-top: 14px;
+  margin-bottom: 35px;
+  display: inline-block;
+  width: calc(100% - 100px);
+}
+
+#ochoHoras {
+  width: fit-content;
+}
+
+#seisHoras {
+  width: fit-content;
 }

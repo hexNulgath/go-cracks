@@ -118,7 +118,8 @@ const Form = ({ submitForm }) => {
           <div className="col">
             {' '}
             <div className="form-inputs">
-              Cantidad de horas* <br />
+              <label> Cantidad de horas* </label>
+              <br />
               <input
                 id="ochoHoras"
                 type="radio"
@@ -127,7 +128,7 @@ const Form = ({ submitForm }) => {
                 value="8"
                 onChange={handleChange}
               />
-              <label htmlFor="ochoHoras" className="form-label">
+              <label htmlFor="ochoHoras" className="form-label" id="ocho">
                 8h
               </label>
               <input
@@ -138,7 +139,7 @@ const Form = ({ submitForm }) => {
                 value="6"
                 onChange={handleChange}
               />
-              <label htmlFor="seisHoras" className="form-label">
+              <label htmlFor="seisHoras" className="form-label" id="seis">
                 6h
               </label>
               {errors.horas && <p>{errors.horas}</p>}
@@ -208,7 +209,7 @@ const Form = ({ submitForm }) => {
                 <div className="form-inputs">
                   <label htmlFor="phone" className="form-label">
                     Celular de contacto*
-                  </label>{' '}
+                  </label>
                   <br />
                   <input
                     id="phone"
@@ -259,7 +260,7 @@ const Form = ({ submitForm }) => {
                 />
               </div>
             </div>
-            <div className="row">
+            <div className="row-4">
               <button className="form-input-btn" type="submit">
                 Solicitar Crack
               </button>
