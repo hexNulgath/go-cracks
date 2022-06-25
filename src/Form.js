@@ -24,7 +24,7 @@ const Form = ({ submitForm }) => {
           <div className="col-xs-12 col-lg-4">
             <div className="form-inputs">
               <label htmlFor="username" className="form-label">
-                Nombre*
+                <span>*</span>Nombre
               </label>
               <br />
               <input
@@ -42,7 +42,7 @@ const Form = ({ submitForm }) => {
             {' '}
             <div className="form-inputs">
               <label htmlFor="companyName" className="form-label">
-                Empresa*
+                <span>*</span>Empresa
               </label>
               <br />
               <input
@@ -60,7 +60,7 @@ const Form = ({ submitForm }) => {
             {' '}
             <div className="form-inputs">
               <label htmlFor="email" className="form-label">
-                Email*
+                <span>*</span>Email
               </label>
               <br />
               <input
@@ -79,7 +79,7 @@ const Form = ({ submitForm }) => {
           <div className="col-xs-12 col-lg-4">
             <div className="form-inputs">
               <label htmlFor="serviceDate" className="form-label">
-                Fecha del servicio*
+                <span>*</span>Fecha del servicio
               </label>
               <br />
               <input
@@ -96,7 +96,7 @@ const Form = ({ submitForm }) => {
           <div className="col-xs-12 col-lg-4">
             <div className="form-inputs">
               <label htmlFor="startTime" className="form-label">
-                Hora de inicio del servicio*
+                <span>*</span>Hora de inicio del servicio
               </label>
               <br />
               <input
@@ -112,7 +112,12 @@ const Form = ({ submitForm }) => {
           </div>
           <div className="col-xs-12 col-lg-4">
             <div className="form-inputs">
-              <label> Cantidad de horas* </label>
+              <label>
+                <span>
+                  <span>*</span>
+                </span>
+                Cantidad de horas{' '}
+              </label>
               <br />
               <input
                 id="ochoHoras"
@@ -144,7 +149,10 @@ const Form = ({ submitForm }) => {
           <div className="col-xs-12 col-lg-4">
             <div className="form-inputs">
               <label htmlFor="wages" className="form-label">
-                Cantidad de jornales deseados*
+                <span>
+                  <span>*</span>
+                </span>
+                Cantidad de jornales deseados
               </label>
               <br />
               <input
@@ -162,7 +170,10 @@ const Form = ({ submitForm }) => {
             {' '}
             <div className="form-inputs">
               <label htmlFor="employees" className="form-label">
-                Cantidad de Cracks a contratar*
+                <span>
+                  <span>*</span>
+                </span>
+                Cantidad de Cracks a contratar
               </label>
               <br />
               <input
@@ -199,7 +210,10 @@ const Form = ({ submitForm }) => {
               <div className="col-xs-12 col-lg-6">
                 <div className="form-inputs">
                   <label htmlFor="phone" className="form-label">
-                    Celular de contacto*
+                    <span>
+                      <span>*</span>
+                    </span>
+                    Celular de contacto
                   </label>
                   <br />
                   <input
@@ -216,7 +230,10 @@ const Form = ({ submitForm }) => {
               <div className="col-xs-12 col-lg-6">
                 <div className="form-inputs">
                   <label htmlFor="adress" className="form-label">
-                    Direccion del servicio*
+                    <span>
+                      <span>*</span>
+                    </span>
+                    Dirección del servicio
                   </label>{' '}
                   <br />
                   <input

@@ -1,7 +1,8 @@
 .form-inputs p {
-  color: red;
-  font-size: 0.75em;
+  color: #f43a16;
+  font-size: 1em;
   font-family: 'Lora', serif;
+  font-weight: 400;
 }
 
 h2 {
@@ -20,7 +21,9 @@ p {
   font-weight: 500;
   color: #1e1e1e;
 }
-
+label span {
+  color: #173486;
+}
 label {
   font-family: 'Lora', serif;
   font-size: 1.375em;

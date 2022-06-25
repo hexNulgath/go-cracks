@@ -1,5 +1,8 @@
 import axios from 'axios';
+import React from 'react';
+
 import { data } from './App.js';
+import './FormSuccess.css';
 
 const FormSuccess = () => {
   const values = JSON.parse(data);
@@ -32,8 +35,15 @@ const FormSuccess = () => {
   }
   sendUserData();
   return (
-    <div>
-      <h1>please wait</h1>
+    <div id="formSuccess">
+      <h2>Por favor espere...</h2>
+      <div className="form-content-right" id="Form">
+        <p id="text">
+          Envíanos tus datos y la fecha para la cual necesitas contratar un
+          Crack y nuestro equipo de soporte se encargará de la selección y de
+          enviarte todos los detalles pertinentes.{' '}
+        </p>
+      </div>
     </div>
   );
 };
