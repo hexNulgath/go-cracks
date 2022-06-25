@@ -20,41 +20,69 @@ p {
   color: #1e1e1e;
 }
 
-#Form {
-  margin-top: 70px;
-  margin-left: 80px;
-  margin-right: 80px;
-}
-
 label {
   font-family: 'Lora', serif;
   font-size: 22px;
-  font-weight: 00;
+  font-weight: 400;
   color: #1e1e1e;
   margin-top: 14px;
   margin-bottom: 0px;
 }
 
+#message {
+  width: 93%;
+  height: 100px;
+  padding: 10px;
+}
+
 #ocho {
   margin-right: 30px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 #seis {
-  margin-left: 5px;
+  margin-left: 10px;
+}
+#solicitarCrack {
+  background-color: #234ec9;
+  color: #ffffff;
+  font-family: 'Lora', serif;
+  font-size: 23px;
+  font-weight: 700;
+  border-radius: 34px;
+  border: none;
+  height: 48px;
+  width: 242px;
+  margin-top: 101px;
+}
+
+#solicitarCrack:hover {
+  background-color: #173486;
 }
 
 input {
   margin-top: 14px;
   margin-bottom: 35px;
   display: inline-block;
-  width: calc(100% - 100px);
+  width: calc(100%);
 }
 
-#ochoHoras {
-  width: fit-content;
+input[type='radio'] {
+  border: 0px;
+  width: 2em;
+  height: 2em;
+  accent-color: #234ec9;
+}
+#Form {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-#seisHoras {
-  width: fit-content;
+@media screen and (min-width: 992px) {
+  #Form {
+    margin-top: 70px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 }

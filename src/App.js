@@ -18,21 +18,23 @@ function App() {
   return (
     <div className="container" id="bodyForm">
       <nav class="navbar navbar-expand-lg" id="navbar">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand" href="https://www.gocracks.uy/">
             <img src="/images/logo.png" alt="" id="logoNavbar" />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon "></span>
-          </button>
+          <div id="hamburgerMenu">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon "></span>
+            </button>
+          </div>
           <div class="d-flex flex-row-reverse">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -79,7 +81,7 @@ function App() {
       <footer class="text-center text-lg-start" id="footer">
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 col-md-8 mb-4 mb-md-0">
+            <div class="col-lg-8 d-none d-lg-block">
               <ul class="list-unstyled mb-0">
                 <li>
                   <a href="https://www.gocracks.uy/">Inicio</a>
@@ -98,7 +100,7 @@ function App() {
               </ul>
             </div>
 
-            <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
+            <div class="col-lg-2 col-xs-12">
               <ul class="list-unstyled mb-0">
                 <br />
                 <li>
@@ -110,7 +112,7 @@ function App() {
               </ul>
             </div>
 
-            <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
+            <div class="col-lg-2 col-xs-12">
               <ul class="list-unstyled">
                 <br />
                 <li>
@@ -121,12 +123,14 @@ function App() {
                 </li>
               </ul>
             </div>
+          </div>{' '}
+          <div
+            class="d-flex justify-content-lg-center justify-content-xs-start"
+            id="copyright"
+          >
+            © 2022 GoCracks. Todos los derechos reservados. Diseñado por Studio
+            Morai.
           </div>
-        </div>
-
-        <div class="text-center " id="copyright">
-          © 2022 GoCracks. Todos los derechos reservados. Diseñado por Studio
-          Morai.
         </div>
       </footer>
     </div>
