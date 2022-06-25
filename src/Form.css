@@ -1,11 +1,12 @@
 .form-inputs p {
   color: red;
-  font-size: 12px;
+  font-size: 0.75em;
+  font-family: 'Lora', serif;
 }
 
 h2 {
   font-family: 'Lora', serif;
-  font-size: 58px;
+  font-size: 3.625em;
   font-weight: 500;
   color: #1e1e1e;
   line-height: 68px;
@@ -15,14 +16,14 @@ h2 span {
 }
 p {
   font-family: 'Lora', serif;
-  font-size: 22px;
+  font-size: 1.375em;
   font-weight: 500;
   color: #1e1e1e;
 }
 
 label {
   font-family: 'Lora', serif;
-  font-size: 22px;
+  font-size: 1.375em;
   font-weight: 400;
   color: #1e1e1e;
   margin-top: 14px;
@@ -47,7 +48,7 @@ label {
   background-color: #234ec9;
   color: #ffffff;
   font-family: 'Lora', serif;
-  font-size: 23px;
+  font-size: 1.438em;
   font-weight: 700;
   border-radius: 34px;
   border: none;
