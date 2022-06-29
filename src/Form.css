@@ -29,12 +29,7 @@ p {
   font-weight: 500;
   color: #1e1e1e;
 }
-a {
-  font-size: 0.7em;
-  color: #1e1e1e;
-  display: inline;
-  margin-left: 1vw;
-}
+
 label span {
   color: #173486;
 }
@@ -88,8 +83,12 @@ input {
   width: 13px;
   padding-top: 0;
 }
-#tycText {
+.tycText {
   margin-bottom: 0;
+  font-size: 0.7em;
+  color: #1e1e1e;
+  display: inline;
+  margin-left: 1vw;
 }
 
 input[type='radio'] {

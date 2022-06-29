@@ -277,21 +277,23 @@ const Form = ({ submitForm }) => {
               <div className="row">
                 <div className="col-xs-12 col-lg-9">
                   <div className="form-inputs">
-                    <input
-                      id="tyc"
-                      type="checkbox"
-                      name="tyc"
-                      className="form-input"
-                      onChange={handleChange}
-                    />
                     <label htmlFor="tyc" className="form-label" href>
+                      <input
+                        id="tyc"
+                        type="checkbox"
+                        name="tyc"
+                        className="form-input"
+                        onChange={handleChange}
+                      />
+                      <span className="tycText">
+                        *Avanzando confirmas que estas de acuerdo con nuestros
+                      </span>
                       <a
-                        id="tycText"
+                        className="tycText"
                         href="https://www.gocracks.uy/terminos-y-condiciones"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        *Avanzando confirmas que estas de acuerdo con nuestros
                         Terminos y condiciones
                       </a>
                     </label>
