@@ -22,7 +22,7 @@ h2 {
   font-weight: 500;
   color: #1e1e1e;
   line-height: 68px;
-  margin-left: 0px;
+  margin-left: 0px !important;
 }
 h2 span {
   font-family: 'Covered By Your Grace', cursive;
