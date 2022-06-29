@@ -305,7 +305,10 @@ const Form = ({ submitForm }) => {
           </div>
           <div className="col-xs-12 col-lg-3" id="total">
             <div className="row">
-              <h3>Total a pagar: {values.wages * values.employees * time}</h3>
+              <h3>
+                Total a pagar: ${values.wages * values.employees * time}{' '}
+                <span>IVA incluido</span>
+              </h3>
             </div>
             <div className="row">
               {' '}

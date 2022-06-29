@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Form from './Form';
 import FormSuccess from './FormSuccess';
+import { useCallback } from 'react';
 
 var data;
 function setData(value) {
@@ -10,10 +11,9 @@ function setData(value) {
 function App() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  function submitForm() {
+  const submitForm = useCallback(() => {
     setIsSubmitted(true);
-    console.log(data);
-  }
+  }, [setIsSubmitted]);
 
   return (
     <div className="container" id="bodyForm">
@@ -48,14 +48,17 @@ function App() {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="https://www.gocracks.uy/">
+                  <a
+                    class="nav-link"
+                    href="https://www.gocracks.uy/sobre-nosotros"
+                  >
                     Nuestro objetivo
                   </a>
                 </li>
                 <li class="nav-item ">
                   <a
                     class="nav-link"
-                    href="https://www.gocracks.uy/"
+                    href="https://www.gocracks.uy/ser-un-crack"
                     aria-expanded="false"
                   >
                     Cracks
@@ -65,7 +68,7 @@ function App() {
                   <a
                     class="nav-link active"
                     id="active"
-                    href="https://www.gocracks.uy/"
+                    href="https://frontendgocracks.herokuapp.com/"
                   >
                     Empresas
                   </a>
@@ -87,13 +90,18 @@ function App() {
                   <a href="https://www.gocracks.uy/">Inicio</a>
                 </li>
                 <li>
-                  <a href="https://www.gocracks.uy/">Nuestro Objetivo</a>
+                  <a href="https://www.gocracks.uy/sobre-nosotros">
+                    Nuestro Objetivo
+                  </a>
                 </li>
                 <li>
-                  <a href="https://www.gocracks.uy/">Cracks</a>
+                  <a href="https://www.gocracks.uy/ser-un-crack">Cracks</a>
                 </li>
                 <li>
-                  <a href="https://www.gocracks.uy/" id="footerActive">
+                  <a
+                    href="https://frontendgocracks.herokuapp.com/"
+                    id="footerActive"
+                  >
                     Empresas
                   </a>
                 </li>
