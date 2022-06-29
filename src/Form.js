@@ -286,7 +286,8 @@ const Form = ({ submitForm }) => {
                         onChange={handleChange}
                       />
                       <span className="tycText">
-                        *Avanzando confirmas que estas de acuerdo con nuestros
+                        *Avanzando confirmas que estás de acuerdo con nuestros
+                        {'  '}
                       </span>
                       <a
                         className="tycText"
@@ -294,7 +295,7 @@ const Form = ({ submitForm }) => {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        Terminos y condiciones
+                        Términos y condiciones
                       </a>
                     </label>
                     {errors.tyc && <p>{errors.tyc}</p>}

@@ -4,6 +4,9 @@
   font-family: 'Lora', serif;
   font-weight: 400;
 }
+a {
+  margin-left: 0 !important;
+}
 
 #error {
   color: #f43a16;
@@ -82,10 +85,11 @@ input {
 #tyc {
   width: 13px;
   padding-top: 0;
+  margin-bottom: 0;
 }
 .tycText {
   margin-bottom: 0;
-  font-size: 0.7em;
+  font-size: 18px;
   color: #1e1e1e;
   display: inline;
   margin-left: 1vw;
