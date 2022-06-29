@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { data, setData } from './App.js';
+import { setData } from './App.js';
 
 const useForm = (callback, validate) => {
   const [values, setValues] = useState({
@@ -14,6 +14,7 @@ const useForm = (callback, validate) => {
     rut: '',
     phone: '',
     adress: '',
+    tyc: '',
     message: '',
   });
 
@@ -23,6 +24,7 @@ const useForm = (callback, validate) => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    console.log(values.tyc);
     setValues({
       ...values,
       [name]: value,
@@ -42,7 +44,7 @@ const useForm = (callback, validate) => {
   };
 
   useEffect(() => {
-    if (Object.keys(errors).length === 0 && isSubmitting) {
+    if (Object.keys(errors).length === 0 && isSubmitting === true) {
       callback();
     }
   }, [errors]);

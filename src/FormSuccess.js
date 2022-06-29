@@ -6,7 +6,13 @@ import './FormSuccess.css';
 
 const FormSuccess = () => {
   const values = JSON.parse(data);
-  const total = values.wages * values.employees * 300 * parseInt(values.horas);
+  var time;
+  if (parseInt(values.horas) === 8) {
+    time = 2730;
+  } else if (parseInt(values.horas) === 6) {
+    time = 2190;
+  }
+  const total = values.wages * values.employees * time;
   console.log(data);
   console.log(values);
   console.log(total);
@@ -34,6 +40,7 @@ const FormSuccess = () => {
       });
   }
   sendUserData();
+  window.scrollTo(0, 0);
   return (
     <div id="formSuccess">
       <h2>Por favor espere...</h2>

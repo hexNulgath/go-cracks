@@ -8,6 +8,12 @@ const Form = ({ submitForm }) => {
     submitForm,
     validate
   );
+  var time = 0;
+  if (parseInt(values.horas) === 8) {
+    time = 2730;
+  } else if (parseInt(values.horas) === 6) {
+    time = 2190;
+  }
   return (
     <div className="form-content-right" id="Form">
       <h2>
@@ -157,7 +163,7 @@ const Form = ({ submitForm }) => {
               <br />
               <input
                 id="wages"
-                type="number"
+                type="tel"
                 name="wages"
                 className="form-input"
                 value={values.wages}
@@ -178,7 +184,7 @@ const Form = ({ submitForm }) => {
               <br />
               <input
                 id="employees"
-                type="number"
+                type="tel"
                 name="employees"
                 className="form-input"
                 value={values.employees}
@@ -195,7 +201,7 @@ const Form = ({ submitForm }) => {
               <br />
               <input
                 id="rut"
-                type="text"
+                type="number"
                 name="rut"
                 className="form-input"
                 value={values.rut}
@@ -234,7 +240,7 @@ const Form = ({ submitForm }) => {
                       <span>*</span>
                     </span>
                     Dirección del servicio
-                  </label>{' '}
+                  </label>
                   <br />
                   <input
                     id="adress"
@@ -248,26 +254,59 @@ const Form = ({ submitForm }) => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="row">
-            <div className="col-xs-12 col-lg-8">
-              <div className="form-inputs">
-                <label htmlFor="message" className="form-label">
-                  Comentarios
-                </label>
-                <br />
-                <textarea
-                  id="message"
-                  type="text"
-                  name="message"
-                  maxLength="450"
-                  className="form-input"
-                  value={values.message}
-                  onChange={handleChange}
-                />
+            <div className="row">
+              <div className="col-12 ">
+                <div className="form-inputs">
+                  <label htmlFor="message" className="form-label">
+                    Comentarios
+                  </label>
+                  <br />
+                  <textarea
+                    id="message"
+                    type="text"
+                    name="message"
+                    maxLength="450"
+                    className="form-input"
+                    value={values.message}
+                    onChange={handleChange}
+                  />
+                </div>
               </div>
             </div>
-            <div className="col-xs-12 col-lg-4">
+            <div className="col">
+              <div className="row">
+                <div className="col-xs-12 col-lg-9">
+                  <div className="form-inputs">
+                    <input
+                      id="tyc"
+                      type="checkbox"
+                      name="tyc"
+                      className="form-input"
+                      onChange={handleChange}
+                    />
+                    <label htmlFor="tyc" className="form-label" href>
+                      <a
+                        id="tycText"
+                        href="https://www.gocracks.uy/terminos-y-condiciones"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        *Avanzando confirmas que estas de acuerdo con nuestros
+                        Terminos y condiciones
+                      </a>
+                    </label>
+                    {errors.tyc && <p>{errors.tyc}</p>}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-xs-12 col-lg-3" id="total">
+            <div className="row">
+              <h3>Total a pagar: {values.wages * values.employees * time}</h3>
+            </div>
+            <div className="row">
+              {' '}
               <button
                 className="form-input-btn"
                 type="submit"
@@ -275,10 +314,10 @@ const Form = ({ submitForm }) => {
               >
                 Solicitar Crack
               </button>
+              {errors.error && <p id="error">{errors.error}</p>}
             </div>
           </div>
         </div>
-        <div className="col"></div>
       </form>
     </div>
   );

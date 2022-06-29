@@ -5,6 +5,14 @@
   font-weight: 400;
 }
 
+#error {
+  color: #f43a16;
+  font-size: 1em;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  margin-top: 2vh;
+}
+
 h2 {
   font-family: 'Lora', serif;
   font-size: 3.625em;
@@ -20,6 +28,12 @@ p {
   font-size: 1.375em;
   font-weight: 500;
   color: #1e1e1e;
+}
+a {
+  font-size: 0.7em;
+  color: #1e1e1e;
+  display: inline;
+  margin-left: 1vw;
 }
 label span {
   color: #173486;
@@ -57,7 +71,6 @@ label {
   border: none;
   height: 48px;
   width: 242px;
-  margin-top: 101px;
 }
 
 #solicitarCrack:hover {
@@ -69,6 +82,14 @@ input {
   margin-bottom: 35px;
   display: inline-block;
   width: calc(100%);
+}
+
+#tyc {
+  width: 13px;
+  padding-top: 0;
+}
+#tycText {
+  margin-bottom: 0;
 }
 
 input[type='radio'] {
@@ -83,10 +104,26 @@ input[type='radio'] {
   margin-right: 20px;
 }
 
+h3 {
+  margin-bottom: 2vh;
+  font-family: 'Lora', serif;
+  font-size: 2.5em;
+  font-weight: 400;
+  color: #1e1e1e;
+}
+
 @media screen and (min-width: 992px) {
   #Form {
     margin-top: 70px;
     margin-left: 80px;
     margin-right: 80px;
+  }
+  #total {
+    margin-top: 26vh;
+    margin-left: 0 !important;
+    padding: 0 !important;
+  }
+  #total h3 {
+    padding-left: 0;
   }
 }
