@@ -13,7 +13,6 @@ a {
   font-size: 1em;
   font-family: 'Lora', serif;
   font-weight: 400;
-  margin-left: 0;
   margin-top: 2vh;
 }
 
@@ -23,6 +22,7 @@ h2 {
   font-weight: 500;
   color: #1e1e1e;
   line-height: 68px;
+  margin-left: 0px;
 }
 h2 span {
   font-family: 'Covered By Your Grace', cursive;
