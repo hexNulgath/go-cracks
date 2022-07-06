@@ -10,9 +10,9 @@ const Form = ({ submitForm }) => {
   );
   var time = 0;
   if (parseInt(values.horas) === 8) {
-    time = 2730;
+    time = 2240;
   } else if (parseInt(values.horas) === 6) {
-    time = 2190;
+    time = 1800;
   }
   return (
     <div className="form-content-right" id="Form">
@@ -20,9 +20,9 @@ const Form = ({ submitForm }) => {
         Solo <span>un paso</span> más...
       </h2>
       <p>
-        Envíanos tus datos y la fecha para la cual necesitas contratar un Crack
-        y nuestro equipo de soporte se encargará de la selección y de enviarte
-        todos los detalles pertinentes.{' '}
+        Completa los datos solicitados a continuación y nuestro equipo se
+        encargará de seleccionar al crack adecuado. Te enviaremos los detalles a
+        tus vías de contacto{' '}
       </p>
       <br />
       <form className="form" onSubmit={handleSubmit}>
@@ -286,7 +286,7 @@ const Form = ({ submitForm }) => {
                         onChange={handleChange}
                       />
                       <span className="tycText">
-                        *Avanzando confirmas que estás de acuerdo con nuestros
+                        *Al avanzar confirmas que estás de acuerdo con nuestros
                         {'  '}
                       </span>
                       <a
@@ -308,7 +308,7 @@ const Form = ({ submitForm }) => {
             <div className="row">
               <h3>
                 Total a pagar: ${values.wages * values.employees * time}{' '}
-                <span>IVA incluido</span>
+                <span>más IVA</span>
               </h3>
             </div>
             <div className="row">

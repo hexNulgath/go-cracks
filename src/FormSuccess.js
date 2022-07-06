@@ -8,11 +8,11 @@ const FormSuccess = () => {
   const values = JSON.parse(data);
   var time;
   if (parseInt(values.horas) === 8) {
-    time = 2730;
+    time = 2240;
   } else if (parseInt(values.horas) === 6) {
-    time = 2190;
+    time = 1800;
   }
-  const total = values.wages * values.employees * time;
+  const total = values.wages * values.employees * time * 1.22;
   console.log(data);
   console.log(values);
   console.log(total);
