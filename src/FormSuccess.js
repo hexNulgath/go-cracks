@@ -19,7 +19,7 @@ const FormSuccess = () => {
   function sendUserData() {
     const options = {
       method: 'get',
-      url: 'https://go-cracks.herokuapp.com/data',
+      url: 'http://server-env.eba-yxc8tdwq.us-east-1.elasticbeanstalk.com/data',
       headers: {
         'content-type': 'application/x-www-form-urlencoded',
         'Access-Control-Allow-Origin': '*',
