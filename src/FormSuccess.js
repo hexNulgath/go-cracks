@@ -12,7 +12,7 @@ const FormSuccess = () => {
   } else if (parseInt(values.horas) === 6) {
     time = 1800;
   }
-  const total = values.wages * values.employees * time * 1.22;
+  const total = values.jornales * values.cracks * time * 1.22;
   console.log(data);
   console.log(values);
   console.log(total);

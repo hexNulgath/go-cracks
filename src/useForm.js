@@ -3,19 +3,19 @@ import { setData } from './App.js';
 
 const useForm = (callback, validate) => {
   const [values, setValues] = useState({
-    username: '',
-    companyName: '',
+    nombre: '',
+    empresa: '',
     email: '',
-    serviceDate: '',
-    startTime: '',
+    fechaDelServicio: '',
+    inicio: '',
     horas: '',
-    wages: '',
-    employees: '',
+    jornales: '',
+    cracks: '',
     rut: '',
-    phone: '',
-    adress: '',
+    tel: '',
+    direccion: '',
     tyc: '',
-    message: '',
+    mensaje: '',
   });
 
   const [errors, setErrors] = useState({});

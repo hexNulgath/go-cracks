@@ -29,37 +29,37 @@ const Form = ({ submitForm }) => {
         <div className="row">
           <div className="col-xs-12 col-lg-4">
             <div className="form-inputs">
-              <label htmlFor="username" className="form-label">
+              <label htmlFor="nombre" className="form-label">
                 <span>*</span>Nombre
               </label>
               <br />
               <input
-                id="username"
+                id="nombre"
                 type="text"
-                name="username"
+                name="nombre"
                 className="form-input"
-                value={values.username}
+                value={values.nombre}
                 onChange={handleChange}
               />
-              {errors.username && <p>{errors.username}</p>}
+              {errors.nombre && <p>{errors.nombre}</p>}
             </div>
           </div>
           <div className="col-xs-12 col-lg-4">
             {' '}
             <div className="form-inputs">
-              <label htmlFor="companyName" className="form-label">
+              <label htmlFor="empresa" className="form-label">
                 <span>*</span>Empresa
               </label>
               <br />
               <input
-                id="companyName"
+                id="empresa"
                 type="text"
-                name="companyName"
+                name="empresa"
                 className="form-input"
-                value={values.companyName}
+                value={values.empresa}
                 onChange={handleChange}
               />
-              {errors.companyName && <p>{errors.companyName}</p>}
+              {errors.empresa && <p>{errors.empresa}</p>}
             </div>
           </div>
           <div className="col-xs-12 col-lg-4">
@@ -84,36 +84,36 @@ const Form = ({ submitForm }) => {
         <div className="row">
           <div className="col-xs-12 col-lg-4">
             <div className="form-inputs">
-              <label htmlFor="serviceDate" className="form-label">
+              <label htmlFor="fechaDelServicio" className="form-label">
                 <span>*</span>Fecha del servicio
               </label>
               <br />
               <input
-                id="serviceDate"
+                id="fechaDelServicio"
                 type="date"
-                name="serviceDate"
+                name="fechaDelServicio"
                 className="form-input"
-                value={values.serviceDate}
+                value={values.fechaDelServicio}
                 onChange={handleChange}
               />
-              {errors.serviceDate && <p>{errors.serviceDate}</p>}
+              {errors.fechaDelServicio && <p>{errors.fechaDelServicio}</p>}
             </div>
           </div>
           <div className="col-xs-12 col-lg-4">
             <div className="form-inputs">
-              <label htmlFor="startTime" className="form-label">
+              <label htmlFor="inicio" className="form-label">
                 <span>*</span>Hora de inicio del servicio
               </label>
               <br />
               <input
-                id="startTime"
+                id="inicio"
                 type="time"
-                name="startTime"
+                name="inicio"
                 className="form-input"
-                value={values.startTime}
+                value={values.inicio}
                 onChange={handleChange}
               />
-              {errors.startTime && <p>{errors.startTime}</p>}
+              {errors.inicio && <p>{errors.inicio}</p>}
             </div>
           </div>
           <div className="col-xs-12 col-lg-4">
@@ -154,7 +154,7 @@ const Form = ({ submitForm }) => {
         <div className="row">
           <div className="col-xs-12 col-lg-4">
             <div className="form-inputs">
-              <label htmlFor="wages" className="form-label">
+              <label htmlFor="jornales" className="form-label">
                 <span>
                   <span>*</span>
                 </span>
@@ -162,20 +162,20 @@ const Form = ({ submitForm }) => {
               </label>
               <br />
               <input
-                id="wages"
+                id="jornales"
                 type="tel"
-                name="wages"
+                name="jornales"
                 className="form-input"
-                value={values.wages}
+                value={values.jornales}
                 onChange={handleChange}
               />
-              {errors.wages && <p>{errors.wages}</p>}
+              {errors.jornales && <p>{errors.jornales}</p>}
             </div>
           </div>
           <div className="col-xs-12 col-lg-4">
             {' '}
             <div className="form-inputs">
-              <label htmlFor="employees" className="form-label">
+              <label htmlFor="cracks" className="form-label">
                 <span>
                   <span>*</span>
                 </span>
@@ -183,14 +183,14 @@ const Form = ({ submitForm }) => {
               </label>
               <br />
               <input
-                id="employees"
+                id="cracks"
                 type="tel"
-                name="employees"
+                name="cracks"
                 className="form-input"
-                value={values.employees}
+                value={values.cracks}
                 onChange={handleChange}
               />
-              {errors.employees && <p>{errors.employees}</p>}
+              {errors.cracks && <p>{errors.cracks}</p>}
             </div>
           </div>
           <div className="col-xs-12 col-lg-4">
@@ -215,7 +215,7 @@ const Form = ({ submitForm }) => {
             <div className="row">
               <div className="col-xs-12 col-lg-6">
                 <div className="form-inputs">
-                  <label htmlFor="phone" className="form-label">
+                  <label htmlFor="tel" className="form-label">
                     <span>
                       <span>*</span>
                     </span>
@@ -223,19 +223,19 @@ const Form = ({ submitForm }) => {
                   </label>
                   <br />
                   <input
-                    id="phone"
+                    id="tel"
                     type="tel"
-                    name="phone"
+                    name="tel"
                     className="form-input"
-                    value={values.phone}
+                    value={values.tel}
                     onChange={handleChange}
                   />{' '}
-                  {errors.phone && <p>{errors.phone}</p>}
+                  {errors.tel && <p>{errors.tel}</p>}
                 </div>
               </div>
               <div className="col-xs-12 col-lg-6">
                 <div className="form-inputs">
-                  <label htmlFor="adress" className="form-label">
+                  <label htmlFor="direccion" className="form-label">
                     <span>
                       <span>*</span>
                     </span>
@@ -243,31 +243,31 @@ const Form = ({ submitForm }) => {
                   </label>
                   <br />
                   <input
-                    id="adress"
+                    id="direccion"
                     type="text"
-                    name="adress"
+                    name="direccion"
                     className="form-input"
-                    value={values.adress}
+                    value={values.direccion}
                     onChange={handleChange}
                   />{' '}
-                  {errors.adress && <p>{errors.adress}</p>}
+                  {errors.direccion && <p>{errors.direccion}</p>}
                 </div>
               </div>
             </div>
             <div className="row">
               <div className="col-12 ">
                 <div className="form-inputs">
-                  <label htmlFor="message" className="form-label">
+                  <label htmlFor="mensaje" className="form-label">
                     Comentarios
                   </label>
                   <br />
                   <textarea
-                    id="message"
+                    id="mensaje"
                     type="text"
-                    name="message"
+                    name="mensaje"
                     maxLength="450"
                     className="form-input"
-                    value={values.message}
+                    value={values.mensaje}
                     onChange={handleChange}
                   />
                 </div>
@@ -307,7 +307,7 @@ const Form = ({ submitForm }) => {
           <div className="col-xs-12 col-lg-3" id="total">
             <div className="row">
               <h3>
-                Total a pagar: ${values.wages * values.employees * time}{' '}
+                Total a pagar: ${values.jornales * values.cracks * time}{' '}
                 <span>más IVA</span>
               </h3>
             </div>
