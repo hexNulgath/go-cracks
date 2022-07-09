@@ -68,7 +68,7 @@ function App() {
                   <a
                     class="nav-link active"
                     id="active"
-                    href="https://frontendgocracks.herokuapp.com/"
+                    href="https://www.contratargocracks.com/"
                   >
                     Empresas
                   </a>
@@ -99,7 +99,7 @@ function App() {
                 </li>
                 <li>
                   <a
-                    href="https://frontendgocracks.herokuapp.com/"
+                    href="https://www.contratargocracks.com/"
                     id="footerActive"
                   >
                     Empresas
@@ -127,7 +127,7 @@ function App() {
                   <p>123-456-7890</p>
                 </li>
                 <li>
-                  <p>info@cracks.com</p>
+                  <p>comercial@gocracks.uy</p>
                 </li>
               </ul>
             </div>
