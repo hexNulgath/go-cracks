@@ -19,7 +19,7 @@ const FormSuccess = () => {
   function sendUserData() {
     const options = {
       method: 'get',
-      url: 'http://52.86.77.81:8080/data',
+      url: 'https://z2818b4a4-z0769a017-gtw.zbe940d36.criom.sh/data',
       headers: {
         'content-type': 'application/x-www-form-urlencoded',
         'Access-Control-Allow-Origin': '*',
