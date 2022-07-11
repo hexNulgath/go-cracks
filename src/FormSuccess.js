@@ -19,7 +19,7 @@ const FormSuccess = () => {
   function sendUserData() {
     const options = {
       method: 'get',
-      url: 'https://z2818b4a4-z0769a017-gtw.zbe940d36.criom.sh/data',
+      url: 'https://go-cracks.herokuapp.com/data',
       headers: {
         'content-type': 'application/x-www-form-urlencoded',
         'Access-Control-Allow-Origin': '*',
