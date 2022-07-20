@@ -112,10 +112,10 @@ function App() {
               <ul class="list-unstyled mb-0">
                 <br />
                 <li>
-                  <a href="https://www.gocracks.uy/">Facebook</a>
+                  <a href="https://www.facebook.com/gocracks.uy">Facebook</a>
                 </li>
                 <li>
-                  <a href="https://www.gocracks.uy/">Instagram</a>
+                  <a href="https://www.instagram.com/gocracks.uy/">Instagram</a>
                 </li>
               </ul>
             </div>
@@ -124,7 +124,7 @@ function App() {
               <ul class="list-unstyled">
                 <br />
                 <li>
-                  <p>123-456-7890</p>
+                  <p>097 777 133</p>
                 </li>
                 <li>
                   <p>comercial@gocracks.uy</p>
